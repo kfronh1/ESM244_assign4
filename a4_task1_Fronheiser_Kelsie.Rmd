@@ -44,7 +44,7 @@ rownames(wc_scaled) <- chem_means$site_code
 ```
 ### Complete Linkage Agglomerative Hierarchical Clustering
 
-This analysis used the `stats::hclust()` function to perform a complete linkage hierarchical clustering of water chemistry values in individual stream sites in Santa Barbara. Complete linkage creates clusters by merging observations with the smallest **maximum** distance.
+This analysis used the `stats::hclust()` function to perform a complete linkage hierarchical clustering of water chemistry values in individual stream sites in Santa Barbara. Complete linkage creates clusters by merging observations with the smallest *maximum* distance.
 ```{r}
 # Compute dissimilarity values (Euclidean distances)
 euc_distance <- dist(wc_scaled, method = "euclidean")
